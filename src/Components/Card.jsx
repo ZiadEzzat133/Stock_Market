@@ -34,7 +34,7 @@ const Card = ({ id, image, title, category, price }) => {
     };
 
     const increment = () => {
-        if (addedToCart) return;
+        // if (addedToCart) return;
 
         setQuantity((prev) => {
             const newQuantity = prev + 1;
@@ -44,7 +44,7 @@ const Card = ({ id, image, title, category, price }) => {
     };
 
     const decrement = () => {
-        if (quantity === 1 || addedToCart) return;
+        if (quantity === 1) return;
 
         setQuantity((prev) => {
             const newQuantity = prev - 1;
