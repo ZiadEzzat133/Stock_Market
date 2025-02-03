@@ -12,6 +12,7 @@ const Header = ({ dark }) => {
     };
     const handleLogout = () => {
         localStorage.removeItem('token');
+        localStorage.removeItem('cart');
         window.location.href = '/';
     };
 
